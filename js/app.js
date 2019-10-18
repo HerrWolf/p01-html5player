@@ -137,6 +137,10 @@ function changevideo(filename) {
         vid.load();
         vid.play();
     } else {
-        alert("Formato de archivo no soportado");
+        // Si el archivo no es de video abrir el archivo en la ventana al dar click
+        // window.location.href = filename;
+
+        // Si el archivo no es de video abrir el archivo en otra ventana del navegador
+        window.open(filename, '_blank');
     }
 }
